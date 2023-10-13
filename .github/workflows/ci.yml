@@ -11,7 +11,7 @@ permissions:
 
 env: 
   REGISTRY: ricardo14032008
-  IMAGE_NAME: Ejercicio
+  IMAGE_NAME: ejercicio
 
 jobs:
 
