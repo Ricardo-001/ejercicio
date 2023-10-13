@@ -9,6 +9,10 @@ on:
 permissions:
   contents: read
 
+env: 
+  REGISTRY: ricardo14032008
+  IMAGE_NAME: Ejercicio
+
 jobs:
 
   build:
@@ -47,5 +51,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: user/app:latest
-        
+        tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
